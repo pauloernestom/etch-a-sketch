@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script type="text/javascript" src="js/colorpicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/themes.css" />
+    
+</head>
+
+
+
+<body>
+<div id="header">
+    <header>
+        <h1>Etch a Sketch</h1>
+    </header>
+</div>
+<div id="butons">
+    <button id="reset">Reset initial 16x16</button>
+    <button id="rainbow">Rainbow Mode</button>
+    <button id="drawmode">Draw Mode</button>
+    <div>
+        
+        <div id="select">
+            <input id="squares" class="form" type="number" name="squares" value="16"/>
+
+            <input id="submit" class="form" type="submit" value="Resize" />
+        </div>
+    </div>
+</div>
+
+
+<div id="all">
+   
+    <div id="color-picker" class="cp-normal">
+    </div>
+    <div id="generalDiv" >
+        
+        <div id="container">
+            <!--Inserted divs-->
+        </div>
+
+        <div id="container2" style="display: none;">
+            <!--Inserted divs-->
+        </div>
+
+    
+
+    </div>
+
+
+
+
+    <script type="text/javascript" src="js/index.js"></script>
+
+
+
+    
+
+    <script type="text/javascript">
+
+        ColorPicker(
+
+        document.getElementById('color-picker'),
+
+            function(hex, hsv, rgb) {
+                document.body.style.color = hex; 
+            });
+
+    </script>
+    </div>
+</div>
+</body>
+</html>
